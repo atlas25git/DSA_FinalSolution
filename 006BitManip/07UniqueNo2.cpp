@@ -5,6 +5,9 @@ using namespace std;
 //running xor, for the samenos it'd become 0, and for the distinct one would remain
 
 int main(){
+    
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 
     int n;
     int a[100005];
