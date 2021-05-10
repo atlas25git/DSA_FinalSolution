@@ -1,0 +1,8 @@
+Candidates are appearing for i/w, prob of each getting selected is 0.16.
+What is expected no of candidates that you'd need to interview:
+
+X = 0.16(1) //First candidate selected
+    + (1 - 0.16)(X+1) //First rej.
+=> X = 6.25
+
+BT: E[x] = 1/p => 6.25

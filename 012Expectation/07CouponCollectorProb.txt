@@ -1,0 +1,25 @@
+Each packet has a coupon chosen randomly, Give expected no of packets one must buy to 
+collect them all:
+
+Packets required to get i'th distinct coupon
+
+E[Xi] = 1/p
+
+Where n->total coupons:
+-----------------------
+i -> no od coupons collected
+ith new given by n-(i-1)
+
+p(getting new coupon) = [{n-(i-1)}/n]
+
+Total no of packet's expectation could be broken down:
+
+E[X] = expectation for 1st coupon distinct 
+            + for 2nd
+                +
+                .
+                .
+                .
+                nth
+
+E[X] = n(1 + 1/2 + 1/3 + 1/4+ ............ + 1/n)

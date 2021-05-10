@@ -1,0 +1,32 @@
+Expected no. of coin flips to get a head:
+----------------------------------------
+
+X = 1 * 1/2 + (1+X) * 1/2
+2X + 1 + X + 1
+x=2;
+
+Expected no. of coin flips to get 2 consecutive heads:
+
+Let it be X
+
+X = 1/2(X+1) // T----
+    + 1/2*1/2*(2) // HH
+    + 1/2*1/2*(X+2) // HT (2 trials wasted)
+
+=> X = 6
+
+Expected no. of coin flips to get N consecutive heads:
+
+X = 1/2*(X+1) // T---
+    + 1/2*1/2(X+2) //HT--
+        +1/2*1/2*1/2(X+3) // HHT---
+        .
+        .
+        .
+        .
+            +1/(2^n)*(X+N) //HHHHHH......T---
+                +1/(2^n)*(N) //Success //HHHHHHH---- 
+
+Now the sum of coefficients could be calculated as they form an AGP
+X = 2^(N+1) - 2
+

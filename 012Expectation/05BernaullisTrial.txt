@@ -1,0 +1,17 @@
+Bernaulli trials
+
+Such experiment which has exactly 2 outcomes, one of which is desired.
+
+1) Coin Fkip
+2) Success/failure
+
+Theorem 1:
+If prob of success of a bernaulli trial is p then the expected no of trials to get success is 1/p.
+
+Theorem 2:
+If prob of getting success in Bernaulli trial is p then expected no of successes in n trials is np.
+
+Q-> N students asked to choose a no. from 1 to 100, expected no of students who would choose a single digit no:
+
+Success = 9/100
+E[success] = n.9/100

@@ -1,0 +1,5 @@
+Fair coin flipped N times, give Expected no of heads
+
+E[x1 + x2 + x3 + ..... xN] = E[x1] + E[x2] + .... E[xN]
+                           = 0.5 + 0.5 +.... + 0.5 
+                           = n/2

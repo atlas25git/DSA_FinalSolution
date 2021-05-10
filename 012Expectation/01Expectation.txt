@@ -1,0 +1,10 @@
+Avg value of a random variable
+In case of a dice:
+    Random o/p: {1,2,3,4,5,6}
+    E(x) = Sum(Xi * P(Xi))
+    Dice = 3.5 != Most Probable value
+    avg value to be expected over large trials.
+
+For cont probability dist cases:
+    E(x) = Integral( X * P(X) dx)
+

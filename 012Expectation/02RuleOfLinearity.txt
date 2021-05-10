@@ -1,0 +1,12 @@
+E[X+Y] = E[X] + E[y], regardless of X and Y's dependence or independence.
+E[aX + bY] = aE[X] + bE[y]
+For the case of 2 dices thrown siimultaneously:
+
+    For 2 dices = 3.5 + 3.5
+
+2. Case of dependent cases:
+Sum of nums rolled on a dice is A, product is b
+
+E[A+B] = E[A] + E[B]
+        (3.5 + 3.5) + (3.5*3.5)
+        
