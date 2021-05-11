@@ -1,0 +1,36 @@
+LDE is a polynomial eqn usually in 2 or more unknowns, with constraint that
+only integral solutions exist to the unknowns
+
+Q: determine if the eqn is LDE
+    Ax + By = C
+    
+    g = GCD(a,b)
+    then AB could be written as:
+    A = K1*g
+    B = K2*g
+
+substituting in the eqn:
+    K1*gX + K2*gY = c
+
+    -> K1X + K2Y =c/g
+    since lhs are integers, c/g should also be an integer
+    implying that c is multiple of g => c%g =0;
+    =>c/g = K
+
+    K1X + K2Y = K
+
+    current eqn is of the ExtendedEuclidean form:
+    aX0 + bY0 = K*GCD(a,b);
+
+    X1 = KX0
+    Y1 = Ky0
+    these are our first set of equations.
+
+    There exists infinitely many soutions to the set of eqns:
+
+    Family of solutions:
+
+    X = X1 + (b/g)*t
+    Y = Y1 + (a/g)*t
+
+    t is a integral parameter.

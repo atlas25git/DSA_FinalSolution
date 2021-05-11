@@ -1,0 +1,12 @@
+1. (a+b)%m = {(a%m) + (b%m)}%m
+2. (a-b)%m = {(a%m) - (b%m) + m}%m //to keep it positive
+3. (a*b)%m = {(a%m) * (b%m)}%m
+
+4. {a/b}%m ={(a%m)*(bINV%m)}%m
+    bInv = multiplicative modulo inverse
+
+    multiplicaative mod inv:
+
+    (6 * y)%7=1
+
+    Multiplicative Modulo inv of 6 wrt 7 -> y=6;
