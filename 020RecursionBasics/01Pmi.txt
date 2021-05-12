@@ -1,0 +1,5 @@
+Approach to solve recursion problems: PMI
+
+1) Discern the base case.
+2) Assume fn will solve the subproblem.
+3) Using the results obtained by the sub problem write down the solution for the next step.
