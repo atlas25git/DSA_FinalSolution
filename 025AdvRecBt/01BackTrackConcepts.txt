@@ -1,0 +1,14 @@
+Use of BitMasks in backtracking->
+------------------------------------
+
+Questions:
+----------
+
+N-Queen 
+- print/count 1 config
+- print/count all config -> here we do not stop at the case when configuration is found.
+
+Approaches:
+1. Naive backtracking.
+2) Backtracking + Bitsets
+3) Backtracking + BitMasks
