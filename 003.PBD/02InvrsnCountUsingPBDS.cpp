@@ -32,7 +32,7 @@ int main(){
     for(int i=0; i<n; i++){
         ans += (st.size() - st.order_of_key(a[i]));
         st.insert(a[i]);
-        cout<<ans<<"\n";
+        //cout<<ans<<"\n";
     }
     cout<<ans<<endl;
     //insertion and lookup both take just logn time
