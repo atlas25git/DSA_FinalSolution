@@ -1,0 +1,6 @@
+All the options considered -> DP, Brute Force
+Best one selected -> Greedy
+Choosing local minima at each step leads us to global minima, as int  the case of coin change problem.
+Doesn't give accurate answer always.
+Greedy based problem's solution's credibility is questionable.
+As in: 15, [1,7,10] -> {5x1,1x10} = 6 coins (Not an optimal solution).
