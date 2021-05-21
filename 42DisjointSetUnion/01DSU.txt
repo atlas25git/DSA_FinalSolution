@@ -1,0 +1,7 @@
+//elements in 2 sets
+//mo element common
+//union->merge 2 sets,by set name, by elemets of 2 diff sets,
+//find->gives set of given element which it belongs to
+//path compression
+//union by rank
+//makes DSU O(1)
