@@ -1,0 +1,19 @@
+Euler's tour:
+--------------
+3 types dominantly.
+1) edges covered in 1st time = 2n-1:: 2(n-1)+1::+1 as the inital root vertex was printed
+, writing vertex no whenever we come at the same/ like dfs
+
+Application -> Time in/out :: occurrences in the path
+
+1) -> Wether x is an ancestor/y is in subtree of x/ x comes in path from y to root.
+Sol)-> if following holds tru in the eulerian path : TinX | TinY ToutY | ToutX
+
+2) 2nd type = 2n->since every node is written twice, 
+write a node whenever we enter and exit, for leaves -> 2 occurrence consecutively will be printed-> 4,4,5,5
+
+3) Requires only n space:: 
+|> Increment time whenever we enter the node, and not when exiting
+|> For leave nodes only one value would be written as we're not incrementing values while exiting.
+|> Like in the dfs step the path while exiting would have the tie instance as that of the last leaf node that has been last uniquely visited.
+|> Same condn, exists for the queries as have been mentioned above.
