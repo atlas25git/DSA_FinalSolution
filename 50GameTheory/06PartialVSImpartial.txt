@@ -1,0 +1,5 @@
+Since tic tac toe and chess reduce the freedom for a played depending upon the inital one, it's a partial game
+but current games of keeper looser and finderWinner are ipartials.
+no draw->
+Normal game-> Player not able to find a move->finder keeper
+Misere game->Keeper Loser

@@ -1,0 +1,48 @@
+Game of NIM:
+----------------
+
+Given a number of piles in which each pile contains some numbers of
+stones/coins. In each turn, a player can choose only one pile and
+remove any number of stones (at least one) from that pile. The player
+who cannot move is considered to lose the game (i.e., one who take the
+last stone is the winner).
+FM A|B
+Balanced state -> B winner
+Unbalanced-> A winner
+
+NIM sum -> cor of all the no. in set of states ->0 balanced else Unbalanced;
+Winning state XOR!=0;
+
+
+For the cases involving more than 2 piles -> Balanced State is checked
+by computing their bitwise XOR==0 ->balanced FM loses.
+
+
+Complex/Composite games-> could be divided into simpler games
+Sprague Grundy Theorem:
+--------------------------------
+
+Grundy No -> size of piles
+Mex: Minimum non neg element not present in a set.
+
+Grundy No
+G(s) = mex(G(s1),G(s2),....G(si)) ->{s1,s2,s3...si}-> states reachable directly from S
+Basically mex here gives us the lower states to which our game could lead into
+
+G(0)=mex(phi)=0
+G(1)=0;
+G(2)=mex(G(0),G(1))=>mex(0,1)=>2;
+
+And atlast calculate xor of all the G nos calculated.
+
+s = {s1,s2,s3...si}
+
+XOR = G(s1)^G(s2)....^G(si)
+
+Question:
+============
+
+Pile of 10 coins,a=1 b=3
+
+for the given condition states reachable are calculated on the value of a and B
+10{1,3} -> {9,8,7}

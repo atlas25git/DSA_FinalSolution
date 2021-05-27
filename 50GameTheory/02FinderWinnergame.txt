@@ -1,0 +1,10 @@
+Given n coins and 2 players A and B, A with moves a=2 & b=6,
+A starts the game for 74 coins give the no. such that A should win.
+
+No matter which move we at since the range of moves is min 2 max 6,
+A will reduce the no of coins to ther earest multiple of 8, and since 8>max move
+at the last level A would pick all the coins and win.
+
+Why 8-> (a+b); moves
+If we could reduce N to the nearest multiple of A+B, A wins-> else B does.
+as in the case of 7.

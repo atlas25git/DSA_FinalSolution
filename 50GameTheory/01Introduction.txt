@@ -1,0 +1,16 @@
+Combinatorial Game Theory:
+
+Consider a simple game which two players can play. There are N coins
+in a pile. In each turn, a player can choose to remove one or two coins.
+The players keep alternating turns and whoever removes the last coin
+from the table wins.
+
+Players play optimally to maximize heir chances of wining
+
+1. Given 2 players and n coins, A starts the game there are 2 moves: 1c or 2c,
+the last one to pick wins.
+Solution given by: 
+if(n%3==0)B wins
+wlaw A wins
+
+Approach: Reduce the game to the nearest multiple of (A+B)

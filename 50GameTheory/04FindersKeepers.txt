@@ -1,0 +1,8 @@
+N=56, A,B a=1,b=6
+As here we need to make the last person not be able to pick up all the coins,
+and that's possible only when we reduce it to a ,multiple a+b this way it can't be
+chosen without leaving  a few by the player in question
+
+Here therefore for 56, whatever A chooses it can't reduce 56 to a multiple of (a+b)
+therefore B will win by choosing 7-(vallue chosen by A) to maintain the schism.
+Therefore ans->cbd

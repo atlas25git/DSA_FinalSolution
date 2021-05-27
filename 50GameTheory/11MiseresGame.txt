@@ -1,0 +1,10 @@
+If coins are ust one in every pile then the winner depends on the even and odd nature of its multiplicity
+::A,B
+
+even -> A
+odd -> B
+
+else the xor criteria: 
+
+XOR(all values) !=0 ->A winner
+else B

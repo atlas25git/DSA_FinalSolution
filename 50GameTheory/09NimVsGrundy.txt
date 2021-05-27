@@ -1,0 +1,8 @@
+Nim is a special version of Grundy, since grundy has a constraint of picking no of coins
+where as in nims there wasn't any such
+
+10 coins, a=1,b=3
+
+Who'd win: G(10)=mex(G(9),G(8),G(7));
+This will be recursive: G(9) = mex(G(8),G(7),G(6));
+ ans!=0 First mover wins.
