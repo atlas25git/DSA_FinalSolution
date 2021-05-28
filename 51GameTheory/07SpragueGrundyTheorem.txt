@@ -33,7 +33,7 @@ G(0)=mex(phi)=0
 G(1)=0;
 G(2)=mex(G(0),G(1))=>mex(0,1)=>2;
 
-And atlast calculate xor of all the G nos calculated.
+And atlast calculate xor of all the G nos calculated.]
 
 s = {s1,s2,s3...si}
 

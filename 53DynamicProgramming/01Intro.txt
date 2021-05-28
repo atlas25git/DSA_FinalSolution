@@ -1,0 +1,3 @@
+2 charachterisitcs of a problem dolvable using dp
+1) Optimal substr.
+2) Overlapping Subproblem
