@@ -1,0 +1,21 @@
+Variants:
+1) Find min/max cost pth in a grid.
+2) Finding no of ways to reach a particular position from a given starting point in a 
+2D grid.
+
+fn to find out min cost:
+
+int min_cost(int R,int C){
+    for(int i=0;i<R;i++){
+        for(int j=0;j<C;j++){
+            if(i==0 && j==0)dp[i][j]=cost[0][0];
+
+            else if(i==0) dp[i][j] = dp[0][j-1]+cost[0][j];
+
+            else if(j==0) dp[i][j] = dp[i-1][0] + cost[i][0]; //cumulative cost of the cell and one prev's
+        
+            else dp[i][j] = min(dp[i-1][j], dp[i][j-1]) + cost[i][j];
+        }
+    }
+    return dp[R-1][C-1];
+}
