@@ -9,12 +9,27 @@
 //3)negative wt cycle dtection -> if present it'd be impossible to compute as minima would lead to -infinity
 //BF is a dp based algorithm
 
+//Sample testcase
+// 3 3 
+// 1 2 3
+// 2 3
+// 4
+// 3 1 -10
+    
+//      3   
+//   1----->2
+// -10\    /  
+//     \  /4
+//       3
+   
+
 #include<bits/stdc++.h>
 using namespace std;
 
 
-vector<int> bellman_ford(int n,int src,vector<vector<int>> edges)
-{
+vector<int> bellman_ford(int V,int src,vector<vector<int>> edges)
+{   
+
        vector<int> dist(V+1,INT_MAX);
        dist[src]=0;
 
@@ -36,7 +51,7 @@ vector<int> bellman_ford(int n,int src,vector<vector<int>> edges)
                int v=edge[1];
                int wt=edge[2];
 
-           if(dit[u]!=INT_MAX && dist[u]+wt<dist[v]){
+           if(dist[u]!=INT_MAX && dist[u]+wt<dist[v]){
                cout<<"Negatice wt cycle found";
            }
        }
