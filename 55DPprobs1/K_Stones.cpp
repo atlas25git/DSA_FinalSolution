@@ -3,6 +3,8 @@
 //dp(k): 1->player about to make 1 move will win
 //dp(0)=0 -> losing state
 //dp(x)=1 if dp(x-ai)=0 for all ai else 0
+//here the no of moves is given by N and these N nos also describe the vakid moves
+//moves vector is given in a sorted order
 
 
 #include<bits/stdc++.h>
@@ -10,7 +12,7 @@ using namespace std;
 
 string solve(vector<int>& v, int k){
     //v represents the valid moves set
-    bool dp[k+1];
+    bool dp[k+1];//representing the states of pile 0 to K
     memset(dp,0,sizeof dp);
 
     for(int i=1;i<=k;i++)
