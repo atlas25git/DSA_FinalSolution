@@ -11,3 +11,5 @@ as in the case of 7.
 //update
 Read it as in adjunction of the previous finderWinner case, as there we divised the winning strategy
 here we buil up on that so that in any case player has some coins remaining.
+//Keep in mind that min of a coins have to be picked in case there ain't much then all of them wuld be picked.
+Hence for a+b whatever N picks, A could pick the remaining lot.
