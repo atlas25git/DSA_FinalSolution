@@ -8,3 +8,6 @@ at the last level A would pick all the coins and win.
 Why 8-> (a+b); moves
 If we could reduce N to the nearest multiple of A+B, A wins-> else B does.
 as in the case of 7.
+//update
+Read it as in adjunction of the previous finderWinner case, as there we divised the winning strategy
+here we buil up on that so that in any case player has some coins remaining.
