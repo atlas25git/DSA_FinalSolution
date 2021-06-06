@@ -1,0 +1,15 @@
+Methods listed below could be useed for LIS problem:
+1) Dp-1 std: O(n^2)
+2) Dp-2 tricky: O(n^2)
+3) Dp-2 with binary srch: O(nlogn)
+4) Dp with segment tree. O(nlogn)
+
+Subsequence: 2^n encluding the empty one
+Dp-1 :> dp(i)_> len of longes increasing Subsequence ending at i, including i.
+        max(dp[j]) + 1, i<j and a[j]<a[i]
+        O(n^@\2)
+
+Dp-2 :> dp(i)_> element at which the Subsequence of length i ends.
+        if there are various elements the dp(i) will store the smallest of all.
+        dp[i]<dp[i+1]
+        dp[pos]< a[i] <dp[pos+1] 
