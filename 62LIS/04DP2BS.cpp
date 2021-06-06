@@ -1,3 +1,6 @@
+//since dp array is strictily increasing we can use binary search to find the next greater no.
+//Bs is used to find such locations in the array suitable for the element to be placed
+
 #include<bits/stdc++.h>
 using namespace std
 #define int long long int
@@ -10,7 +13,8 @@ const mod = 1e9 + 7;
 const int N = 100005, M=22;
 void solve(){
     int i,j,k,n,m,ans=0,cnt=0,sum=0;
-        cin>>n;
+        
+         cin>>n;
         int a[n];
         for(int i=0;i<n;i++){
             cin>>a[i];
@@ -19,11 +23,11 @@ void solve(){
             dp[i]=INT_MAX;
 
         for(int i=0;i<n;i++){
-            for(int length=0;length<n;length++)
-                if(dp[length]<a[i] && a[i]<dp[length+1])
-                {
-                    dp[length+1]=a[i];
-                }   
+            int length = upper_bound(dp,dp+n+1,a[i])-dp;
+            if(dp[length-1] < a[i] && a[i]<dp[length])
+            {
+                dp[length] = a[i];
+            }   
         }
         int lis=0;
         for(int i=1;i<=n;i++)

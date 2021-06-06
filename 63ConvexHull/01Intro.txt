@@ -1,0 +1,38 @@
+Intuition
+----------
+1) Analogy of a rubber band bound arounf protruding nails.
+2) Convex hull is that set of points circumfacing as rubber band.
+3) Convex hull will always form convex polygons.
+
+Graham Scan Algorithm
+---------------------
+1) Sort co ordinates on the basis of x, if equal then y.
+2) Therefore first and last points would be leftmost and rightmost respectively.
+3) Join the points p[0],p[n-1] we'll get 2 sets of points on the sides of the line we just drew.
+4) 
+           \
+         B .\____ angle=X               
+            /
+        A ./____ anfgle=Y
+
+5) Based on X and Y now the next move of hull will be decided: 
+    X<Y : counter clock wise-left
+    X>Y : clok wise-right 
+6) Slope could be calculated using 2 point formula.
+    ax*(bc-cy) + bx(cy-ay) + cx(ay-by) ? 0
+                                        < - ccw/left
+                                        > - cw/rightmost
+                                        = - collinear  
+
+Discerning Set based on Orientation:
+------------------------------------
+1) For give 3 points p1,p[i],p2 :
+                                    cw  -> upper half
+                                    ccw -> lower half
+
+Case: Collinear points also given:
+----------------------------------
+1) Final Covex Hull = (lowerHalf U upperHalf)
+2) sort(points)
+3) Get the unique set of it.
+            
