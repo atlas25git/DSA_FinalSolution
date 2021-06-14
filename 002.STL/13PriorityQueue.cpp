@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
     priority_queue<int> pq; //maxHeap
-    priority_queue<int,vector<int>,greater<int>> pq1;
+    priority_queue<int,vector<int>,greater<int>> pq1;//minHeap
 
     for(int i=0;i<10;i++){
         pq.push(i);

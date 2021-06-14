@@ -10,11 +10,13 @@ using namespace __gnu_pbds;
 typedef tree<int, null_type, less<int>, rb_tree_tag,
              tree_order_statistics_node_update>
              PBDS;
+
+//Pbds->findByOrder||findByKey
             
 int main(){
     PBDS st;
     st.insert(1);
-    st.insert(2);
+    st.insert(20);
     st.insert(3);
     st.insert(11);
     st.insert(14);
@@ -24,7 +26,7 @@ int main(){
     }
     //insertion and lookup both take just logn time
 
-    cout<<"No. of elements smaller than the given no are: "<<st.order_of_key(15)<<endl;
+    cout<<"No. of elements smaller than the given no are: "<<st.order_of_key(115)-1<<endl;
 }
 
 //we can use the data str pair <int,int> in place of <int> to implement multiset, just that

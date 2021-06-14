@@ -29,8 +29,14 @@ class PersonCompare{
 int main()
 {
     int n; cin>>n;
+    // Parameter: T is a type of the arguments to compare by the functional call.
+    // Return Value: It returns boolean variable as shown below:
+    // True: If two element say(a & b) such that a > b.
+    // False: If a < b.
     //priority_queue doesn't take fn as custom comparator, but comparator class
-    priority_queue<Person,vector<Person>,PersonCompare> pq;
+    priority_queue<Person,
+                    vector<Person>,
+                        PersonCompare> pq;
 
     for(int i=0;i<n;i++){
         string name;
