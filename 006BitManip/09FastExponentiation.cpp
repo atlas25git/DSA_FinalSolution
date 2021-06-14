@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-//in bit representation of power, multiplyb a raised to powers of these positions where
+//in bit representation of power, multiply b a raised to powers of these positions where
 //there's a set bit.
 
 int power_opt(int a, int n)

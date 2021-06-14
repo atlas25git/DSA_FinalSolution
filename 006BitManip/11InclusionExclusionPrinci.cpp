@@ -4,7 +4,8 @@ using namespace std;
 typedef long long ll;
 
 //for union of n sets, add individual sets, then for intersection of even no
-//of sets subtract it and for od add it.
+//of sets subtract it and for odd add it.
+//|A U B U C U D| = |A| + |B| + |C| + |D| - |A^B| - |B^C| - |C^A|..... + |A^B^C|.....- |A^B^C^D|
 //find out total no of nos less than 1000 divisble by any prime no less than 20
 
 int main(){
