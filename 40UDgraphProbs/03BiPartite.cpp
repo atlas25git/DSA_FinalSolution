@@ -17,7 +17,10 @@ void dfs(int curr,int par,int col){
         {
             dfs(child,cur,3-col);//3 - col, helps us with alternating the colors passed
         }
-        else if(child != par && col == vis[child]){
+        //child!=par-> Tells us if there's a cycle,
+        //if the color's same-> odd cycle present.
+        else if(child != par && col == vis[child])
+        {
             odd_cycle = 1;
         }
     }

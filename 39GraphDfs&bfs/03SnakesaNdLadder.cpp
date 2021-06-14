@@ -2,8 +2,6 @@
 //ladders give a positive jump and the snakes a jump of neg
 //it's an unwtd graph, cause every edge costs same on dice nos.
 //for a laddr that starts at 2 and takes one to 15, has a jump of +13
-
-
 //in unwtd graphs lvl order traversal gives shortest dist to a node, and if it's wtd graph we use dijkstra's
 
 #include<bits/stdc++.h>
