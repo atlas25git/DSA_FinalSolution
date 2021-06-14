@@ -1,5 +1,5 @@
 //backedge -> an edge from a node that has path to it's ancestor, this is checked by the presence of ancestors in stack.
-//for this we use a stack to access operations in O(1)
+//for this we use a stack as an array implementation with access operations in O(1)
 
 #include<bits/stdc++.h>
 

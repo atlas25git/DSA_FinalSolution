@@ -29,6 +29,7 @@ class Graph{
             //l[y].push_back(x);
         }
 
+
         void topological_sort(){
             int* indegree = new int[V];
 
