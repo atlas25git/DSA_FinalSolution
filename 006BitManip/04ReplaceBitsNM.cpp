@@ -5,9 +5,9 @@ using namespace std;
 
 int clearRangeItoJ(int n,int i, int j){
 
-    int ones = (~0);
+    int ones = (~0);//or -1 ~0 = -1
     int a = ones<<(j+1);
-    int b = (1<<i) - 1;
+    int b = (1<<i) - 1;//last odd of  a complete 2 power set, all 1s 1 at i+1th pos -1 would give i 1s,
     int mask = a| b;
     int ans = n & mask;
     return ans;
