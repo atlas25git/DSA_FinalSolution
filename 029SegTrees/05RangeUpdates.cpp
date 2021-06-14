@@ -11,7 +11,6 @@ using namespace std;
 void updateRange(int *tree,int ss,int se,int l,int r,int inc,int index)
 {
    if(l>se || r<ss)return;
-
    if(se==ee)
    {
        tree[index] += inc;

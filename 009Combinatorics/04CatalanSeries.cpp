@@ -4,7 +4,7 @@
 //recursive relation
 //bin tree instead of bst then n!Catalan no.
 //oeis ->> to fin out all possible sequences
-
+//formula: Cn = {2*(2n-1)/(n+1)}*Cn-1, remember !0 = 1;
 cpp_int findCatalan(int n) 
     {
         cpp_int dp[n+1];dp[0]=1;
