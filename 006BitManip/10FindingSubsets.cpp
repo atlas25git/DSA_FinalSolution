@@ -22,7 +22,7 @@ void printSubsets(int* a)
     int n = 4;//sizeof(a)/sizeof(a[0]);
     cout<<"size of arr: "<<n<<endl;
     //1 is already 2^0, hence right shift n posn raises is ascetained to power of n
-    for(int i=0;i<(1<<n);i++)//1s11
+    for(int i=0;i<(1<<n);i++)//1s111
     {   
         cout<<"Set no: "<<i<<endl;
         filterInt(i,a);
