@@ -11,12 +11,12 @@ using namespace std;
 int main()
 {
     char s[100] = "Neon Graves don't start a cult";
-    char *ptr = strtok(s,"a");
+    char *ptr = strtok(s," ");
 
     cout<<ptr<<endl;
 
     for(int i =0;i<5;i++){
-        ptr = strtok(NULL,"a");
+        ptr = strtok(NULL," ");
         cout<<i+1<<" "<<ptr<<endl;
     }    
 }

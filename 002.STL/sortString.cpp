@@ -12,19 +12,30 @@ using namespace std;
 const int mod = 1e9 + 7;
 const int N = 100005, M=22;
 void solve(){
-    int i,j,k,n,m,ans=0,cnt=0,sum=0;
-        char s[1000];
-        cin>>s;
-        char* p = strtok(s," \f\n\r\t\v");
-        cout<<p<<endl;
-        p = strtok(NULL," \f\n\r\t\v");
-        cout<<p<<endl;
+    int i,j,k,n,m,ans1=0,cnt=0,sum=0;
+        
+        string s;
+        getline(cin,s,'\n');
+        char* ar;
+        ar = &s[0];
+        string ans="";
+        char* p = strtok(ar," ");
+        string x = p;
+        sort(x.begin(),x.end());
+        ans = x;
+        cout<<x<<endl;
+        
         
         while(p!=NULL)
         {   
             p=strtok(NULL," ");
-            cout<<p<<endl;
+            string x1 = p;
+            sort(x1.begin(),x1.end());
+            //cout<<x1<<endl;
+            x =x +" "+ x1;
+            
         }
+        cout<<x.size()<<endl;
 
 }
 void init() {
