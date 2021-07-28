@@ -1,3 +1,5 @@
+//MST problem is defined for connected and undirected graphs.
+
 //active edge -> either of the vertex should be a mst vertex
 //MST edge -> edge inclued in MST
 //mst vertex ->
