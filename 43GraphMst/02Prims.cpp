@@ -1,5 +1,5 @@
 //MST problem is defined for connected and undirected graphs.
-
+//Maintains 2 subsets, in each iteration chooses the min wtd edge connecting the 2 sets.
 //active edge -> either of the vertex should be a mst vertex
 //MST edge -> edge inclued in MST
 //mst vertex ->
