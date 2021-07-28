@@ -1,5 +1,5 @@
 //dis calculated by BFS is the shortes in unwtd graph, having all the edges with same wts
-//for directed we use dijkstra's
+//for wtd we use dijkstra's
 
  #include <bits/stdc++.h>
 
