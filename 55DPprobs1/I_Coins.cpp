@@ -19,7 +19,7 @@ using namespace std;
 double dp[3001][3001];
 double solve(vector<double>& ar,int i,int x)
 {
-     if(x==0)return 1;
+     if(x==0)return 1;//By tossing 0 coins we've a 1 probability of getting 0 heads.
      if(i==0)return 0;
      if(dp[i][x]>-0.9)return dp[i][x];
      return dp[i][x] = ar[i]*solve(ar,i-1,x-1) + (1-ar[i])*solve(ar,i-1,x);
