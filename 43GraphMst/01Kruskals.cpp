@@ -1,3 +1,9 @@
+//Complexity:
+//-------------
+//Naive: O(ElogE + V + E*k(V))
+//          sort  init  dsu
+//k(v) -> constant if we use union by rank and path compression.
+//O(ElogE)
 //sort edges in increasing order of wts
 //add edge if no cycle exists in the graph, it could be added
 //greedy algo

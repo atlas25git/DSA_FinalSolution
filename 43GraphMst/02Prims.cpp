@@ -1,3 +1,11 @@
+//Complexity
+//------------
+//Naive: O(V^2)
+//With minHeap and adj list rep: O((V+E)*logV) -> For cnctd -> O(ElogV)
+
+
+//MST problem is defined for connected and undirected graphs.
+//Maintains 2 subsets, in each iteration chooses the min wtd edge connecting the 2 sets.
 //active edge -> either of the vertex should be a mst vertex
 //MST edge -> edge inclued in MST
 //mst vertex ->
@@ -7,6 +15,7 @@
 //1 Choose a source vertex
 //2 out of all the active edges choose the one with smallest wt.
 //3 the added edge's neighbors would become active.
+//4 Update wts of all the nbrs but in the next iterations, the min would be chosen.
 
 #include<bits/stdc++.h>
 using namespace std;

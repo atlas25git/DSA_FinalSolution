@@ -1,7 +1,9 @@
-//5 pop algos->3 sssp 
-//1.BFS
-//2.Dijkstra->wtd graph with pos. edges
-//3.bellman ford -> wtd graph with negative edges
+//4 pop algos-> out of 5 , 3 are sssp 
+//1.BFS-> O(V+E) // O(n)
+//2.Dijkstra->wtd graph with pos. edges -> O(ElogV) //O(nlogN)
+//3.bellman ford -> wtd graph with negative edges -> O(V*E) //O(n^2)
+
+//Floyd Wrshal: All oair shortest path
 //BellMan Ford
 //------------------------
 //1) init each v with INT_MAX
