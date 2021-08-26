@@ -15,27 +15,16 @@ void solve(){
     int i,j,k,n,m,ans1=0,cnt=0,sum=0;
         
         string s;
-        getline(cin,s,'\n');
-        char* ar;
-        ar = &s[0];
-        string ans="";
-        char* p = strtok(ar," ");
-        string x = p;
-        sort(x.begin(),x.end());
-        ans = x;
-        cout<<x<<endl;
+        string a;
         
-        
-        while(p!=NULL)
+        while(cin>>a)
         {   
-            p=strtok(NULL," ");
-            string x1 = p;
-            sort(x1.begin(),x1.end());
-            //cout<<x1<<endl;
-            x =x +" "+ x1;
-            
+            sort(a.begin(),a.end());
+            cnt==0?s+=a:s+=" "+a;
+            cnt++;
+            //cout<<a<<" ";
         }
-        cout<<x.size()<<endl;
+        cout<<s;
 
 }
 void init() {
