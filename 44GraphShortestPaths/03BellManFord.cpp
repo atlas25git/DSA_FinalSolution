@@ -3,7 +3,7 @@
 //2.Dijkstra->wtd graph with pos. edges -> O(ElogV) //O(nlogN)
 //3.bellman ford -> wtd graph with negative edges -> O(V*E) //O(n^2)
 
-//Floyd Wrshal: All oair shortest path
+//Floyd Wrshal: All pair shortest path
 //BellMan Ford
 //------------------------
 //1) init each v with INT_MAX
