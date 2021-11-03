@@ -3,6 +3,8 @@
 //in unwtd graphs lvl order traversal gives shortest dist to a node, and if it's wtd graph we use dijkstra's
 //min ist using priority queues or sets->remove and insert up8d pair
 
+//Doesn't work for neative wtd edges as to compute (a+b) while minimizing under the duress that b<0 & a>0,
+//it requires us to select a as max as possible, which conflicts with the local greedy strategy of selecting the minima.
 
 
 #include<bits/stdc++.h>
